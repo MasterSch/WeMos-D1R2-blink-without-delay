@@ -6,7 +6,7 @@
 const unsigned int onTime1 = 50;
 const unsigned int offTime1 = 750;
 const unsigned int onTime2 = 740;
-const unsigned int offTime2 = 10;
+const unsigned int offTime2 = 50;
 
 
 // Tracks the last time event fired
@@ -27,8 +27,8 @@ int LED2 = 2;
 // Usual Setup Stuff
 void setup() {
 
- Serial.begin(9600); //This pipes to the serial monitor
- Serial1.begin(9600); //This is the UART, pipes to sensors attached to board
+ Serial.begin(115200); //This pipes to the serial monitor
+ Serial1.begin(115200); //This is the UART, pipes to sensors attached to board
 
 pinMode(LED1, OUTPUT); 
 pinMode(LED2, OUTPUT); 
